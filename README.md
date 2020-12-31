@@ -36,18 +36,29 @@ The user also needs to install several Python libraries. This is done from the C
 
 ***Before installing GDAL:***
 
->Go to https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona and download the GDAL wheel
->Find GDAL-3.1.4-cpXX-cpXXm-win_amd64.whl and download
->Where XX matches your Python version.
+***Before installing GDAL:***
+
+>Go to https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona and download the GDAL wheel.
+>Find GDAL-3.1.4-cp*XX*-cp*XX*m-win_amd64.whl and download,
+>where *XX* matches your Python version.
 >For example: GDAL-3.1.4-cp*37*-cp*37*m-win_amd64.whl
 >
 >Note: 
->Find your Python version by typing python and your command prompt.
->The first line displayed shows the python version
->You might something like:
+>Find your Python version by typing `python` in your command prompt.
+>The first line displayed shows the python version.
+>You might find something like:
 >Python 3.7.8 (tags/v3.7.8:4b47a5b6ba, Jun 28 2020, 08:53:46) …
 >Notice the 3.7 in the version number. This means you will want to download:
 >GDAL-3.1.4-cp37-cp37m-win_amd64.whl
+
+`python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
+
+***Before installing Fiona:***
+
+> Go to https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona and download the GDAL wheel.
+> Find Fiona-1.8.18-cp*XX*-cp*XX*m-win_amd64.whl and download,
+> where *XX* matches your Python version.
+> For example: Fiona-1.8.18-cp*37*-cp*37*m-win_amd64.whl
 
 `python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
 
