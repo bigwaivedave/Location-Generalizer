@@ -19,19 +19,12 @@ To run the software, the user will need to install an open-source Python interpr
 The user also needs to install several Python libraries. This is done from the Command Prompt (CMD). (It is recommended that CMD be run as administrator):
 
 `python -m pip install pyodbc`
-
 `python -m pip install numpy=1.19.3`
-
 `python -m pip install pandas`
-
 `python -m pip install pyyaml`
-
 `python -m pip install sklearn`
-
 `python -m pip install shapely`
-
 `python -m pip install haversine`
-
 `python -m pip install pynput`
 
 ***Before installing GDAL:***
@@ -50,7 +43,7 @@ The user also needs to install several Python libraries. This is done from the C
 >GDAL-3.1.4-cp37-cp37m-win_amd64.whl
 
 `python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl`
-*(replace filename with appropriate version)*
+*(replace filename with appropriate version for your python)*
 
 ***Before installing Fiona:***
 
@@ -60,15 +53,31 @@ The user also needs to install several Python libraries. This is done from the C
 > For example: Fiona-1.8.18-cp*37*-cp*37*m-win_amd64.whl
 
 `python -m pip install Fiona-1.8.18-cp37-c37m-win_amd64.whl`
-*(replace filename with appropriate version)*
+*(replace filename with appropriate version for your python)*
 
 `python -m pip install geopandas`
 
 **GitHub Downloads**
 
-The program files needed can be downloaded from
+The program files needed can be downloaded from https://github.com/bigwaivedave/Location-Generalizer. Click on the **`Code`** button, then click **`Download ZIP`** from the menu. This will download a file Location-Generalizer-main.zip. Extract this file into a directory of your choosing. After extraction, there should be several files into the directory chosen, and a sub-directory called data container two files:
 
-\[add instructions for downloading files from github\]
+`<your_directory>`
+
+> LICENSE
+>
+> NOTICE.txt
+>
+> README.md
+>
+> locationGeneralizer.py
+>
+> locationGeneralizer.yml
+>
+> `data`
+
+> > AFDC_stations.csv
+> >
+> > divisions.pkl
 
 **System Requirements**
 
@@ -105,7 +114,7 @@ requirements:
 
 To improve performance, a non-clustered index should be added to the table. The following example code can be used to add a non-clustered index to a table in Microsoft SQL Server:
 
-\[add example code\]
+`create nonclustered index idx_2 on EVPInput (VehicleID, TripStartLocalTime, TripStartLatitude, TripStartLongitude, TripEndLatitude, TripEndLongitude, TripStartOdometer_Miles, TripEndOdometer_Miles) include (TripEndLocalTime)`
 
 ***Connecting the Software to the Database***
 
@@ -170,7 +179,7 @@ The authors estimate that this criteria will classify the home location of about
 
 After home locations are determined, the software calculates metrics that generally describe the home location and the vehicle location relative to the home location at the start and end of every trip. The software writes these metrics to two output files, called Location Info and Home Info. The software also outputs a third file -- the error log.
 
-** Description of Outputs**
+**Description of Outputs**
 
 ***Location Info***
 
@@ -188,8 +197,6 @@ Table 2. Contents of Location Info output file
 | TripEndDistanceFromHome_Miles   | Straight-line distance between the vehicle’s  parked location at the start of trip and its home location | Miles                                                    |                 XXX |
 | TripStartLocationCategory       | Description of vehicle parked location at  start of trip     | Possible values: “home,” “away from home,”  or “unknown” |                 n/a |
 | TripEndLocationCategory         | Description of vehicle parked location at  end of trip       | Possible values: “home,” “away from home,”  or “unknown” |                 n/a |
-
-
 
 ***Home Info***
 
@@ -236,11 +243,32 @@ The error log file provides the number of records for each vehicle that failed v
 
 **Compiling**
 
-For fastest performance, it is recommended that the user compile the software before running. To compile the software, ....
+For fastest performance, it is recommended that the user compile the software before running. To compile the software, first install the nuitka library:
+
+`python –m pip install nuitka`
+
+After nuitka is installed, and within the directory the GitHub files were installed, compile:
+
+`python -m nuitka --mingw64 locationGeneralizer.py`
+
+> Note: 
+> On first use it will prompt you to download MingGW64. 
+> Type ***yes*** and press enter to answer the prompt:
+>
+> > Is it OK to download and put it in 
+> > "<your-path>\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5".
+> > No installer needed, cached, one time question.
+> > Proceed and download? [Yes]/No
 
 **Running**
 
-To run the software, ....
+To run the software, start a Command Prompt or PowerShell window in the directory the GitHub files were installed to, then:
+
+`python .\locationGeneralizer.py`
+
+Or, if you have create the compiled version:
+
+`.\locationGeneralizer.exe`
 
 **Monitoring Progress**
 
