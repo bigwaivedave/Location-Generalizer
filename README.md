@@ -49,8 +49,7 @@ The user also needs to install several Python libraries. This is done from the C
 >Notice the 3.7 in the version number. This means you will want to download:
 >GDAL-3.1.4-cp37-cp37m-win_amd64.whl
 
-`python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl`
-*(replace filename with appropriate version for your python)*
+`python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
 
 ***Before installing Fiona:***
 
@@ -59,8 +58,7 @@ The user also needs to install several Python libraries. This is done from the C
 > Where XX matches your Python version.
 > For example: Fiona-1.8.18-cp*37*-cp*37*m-win_amd64.whl
 
-`python -m pip install Fiona-1.8.18-cp37-c37m-win_amd64.whl`
-*(replace filename with appropriate version for your python)*
+`python -m pip install Fiona-1.8.18-cp37-c37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
 
 `python -m pip install geopandas`
 
