@@ -36,8 +36,6 @@ The user also needs to install several Python libraries. This is done from the C
 
 ***Before installing GDAL:***
 
-***Before installing GDAL:***
-
 >Go to https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona and download the GDAL wheel.
 >Find GDAL-3.1.4-cp*XX*-cp*XX*m-win_amd64.whl and download,
 >where *XX* matches your Python version.
@@ -61,13 +59,6 @@ The user also needs to install several Python libraries. This is done from the C
 > For example: Fiona-1.8.18-cp*37*-cp*37*m-win_amd64.whl
 
 `python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
-
-***Before installing Fiona:***
-
-> Go to https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona and download the GDAL wheel
-> Find Fiona-1.8.18-cpXX-cpXXm-win_amd64.whl and download
-> Where XX matches your Python version.
-> For example: Fiona-1.8.18-cp*37*-cp*37*m-win_amd64.whl
 
 `python -m pip install Fiona-1.8.18-cp37-c37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
 
