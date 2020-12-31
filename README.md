@@ -16,7 +16,7 @@ Location Generalizer, hereafter referred to as "the software," consist of Python
 
 To run the software, the user will need to install an open-source Python interpreter, downloadable from python.org. The software was developed using Python 3.7.8 from python.org. Running the software in an earlier version of Python may produce errors.
 
-The user also needs to install several Python libraries. This is done from the Command Prompt (CMD). (It is recommended that CMD be run as administrator):
+The user also needs to install several Python libraries. This is done by executing the following lines of code from the Command Prompt (CMD) and must be installed in the order given. (It is recommended that CMD be run as administrator):
 
 `python -m pip install pyodbc`
 
