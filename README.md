@@ -121,25 +121,7 @@ requirements:
 
 To improve performance, a non-clustered index should be added to the table. The following example code can be used to add a non-clustered index to a table in Microsoft SQL Server:
 
-`create nonclustered index idx_2 on EVPInput`
-
-`(VehicleID,`
-
-`TripStartLocalTime,`
-
-`TripStartLatitude,`
-
-`TripStartLongitude,`
-
-`TripEndLatitude,`
-
-`TripEndLongitude,`
-
-`TripStartOdometer_Miles,`
-
-`TripEndOdometer_Miles),`
-
-`include (TripEndLocalTime)`
+> create nonclustered index idx_2 on EVPInput<br>(VehicleID, TripStartLocalTime, TripStartLatitude, TripStartLongitude,<br>TripEndLatitude, TripEndLongitude, TripStartOdometer_Miles, TripEndOdometer_Miles)<br>include (TripEndLocalTime)
 
 ***Connecting the Software to the Database***
 
