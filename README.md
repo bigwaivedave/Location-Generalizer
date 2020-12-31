@@ -78,6 +78,8 @@ The program files needed can be downloaded from https://github.com/bigwaivedave/
 >
 > locationGeneralizer.yml
 >
+> Figure1.png
+>
 > `data`
 
 > > AFDC_stations.csv
