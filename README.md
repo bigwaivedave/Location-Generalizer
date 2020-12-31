@@ -16,7 +16,7 @@ Location Generalizer, hereafter referred to as "the software," consist of Python
 
 To run the software, the user will need to install an open-source Python interpreter, downloadable from python.org. The software was developed using Python 3.7.8 from python.org. Running the software in an earlier version of Python may produce errors.
 
-The user also needs to install several Python libraries. This is done by executing the following lines of code from the Command Prompt (CMD) and must be installed in the order given. (It is recommended that CMD be run as administrator):
+The user also needs to install several Python libraries. This is done from the Command Prompt (CMD). (It is recommended that CMD be run as administrator):
 
 `python -m pip install pyodbc`
 
@@ -34,7 +34,7 @@ The user also needs to install several Python libraries. This is done by executi
 
 `python -m pip install pynput`
 
-***Before installing GDAL:***
+***To install GDAL***
 
 >Go to https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona and download the GDAL wheel.
 >Find GDAL-3.1.4-cp*XX*-cp*XX*m-win_amd64.whl and download,
@@ -48,19 +48,23 @@ The user also needs to install several Python libraries. This is done by executi
 >Python 3.7.8 (tags/v3.7.8:4b47a5b6ba, Jun 28 2020, 08:53:46) …
 >Notice the 3.7 in the version number. This means you will want to download:
 >GDAL-3.1.4-cp37-cp37m-win_amd64.whl
+>
+>`python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
 
-`python -m pip install GDAL-3.1.4-cp37-cp37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
-
-***Before installing Fiona:***
+***To install Fiona***
 
 > Go to https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona and download the GDAL wheel.
 > Find Fiona-1.8.18-cp*XX*-cp*XX*m-win_amd64.whl and download,
 > where *XX* matches your Python version.
 > For example: Fiona-1.8.18-cp*37*-cp*37*m-win_amd64.whl
+>
+> `python -m pip install Fiona-1.8.18-cp37-c37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
 
-`python -m pip install Fiona-1.8.18-cp37-c37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
+
 
 `python -m pip install geopandas`
+
+
 
 **GitHub Downloads**
 
@@ -232,7 +236,7 @@ Table 4. States in each U.S. Census Division
 
 | U.S. Census Division Name | States in Division                                           |
 | ------------------------- | ------------------------------------------------------------ |
-| New England               | Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, Vermont |
+| New England               | <table><tr><td style='border-all:none;'>Connecticut</td><td>Massachusetts</td><td> Rhode Island</td></tr><tr><td>Main</td><td>New Hampshire</td><td>Vermont</td></tr></table> |
 | Mid Atlantic              | New Jersey, New York, Pennsylvania                           |
 | East North Central        | Indiana, Illinois, Michigan, Ohio, Wisconsin                 |
 | West North Central        | Iowa, Nebraska, Kansas, Minnesota, North Dakota, South Dakota, Missouri |
