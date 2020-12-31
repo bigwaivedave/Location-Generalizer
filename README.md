@@ -60,11 +60,11 @@ The user also needs to install several Python libraries. This is done from the C
 >
 > `python -m pip install Fiona-1.8.18-cp37-c37m-win_amd64.whl` *(replace filename with appropriate version for your python)*
 
-
+<br>
 
 `python -m pip install geopandas`
 
-
+<br>
 
 **GitHub Downloads**
 
