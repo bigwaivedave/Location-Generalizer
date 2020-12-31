@@ -19,12 +19,19 @@ To run the software, the user will need to install an open-source Python interpr
 The user also needs to install several Python libraries. This is done from the Command Prompt (CMD). (It is recommended that CMD be run as administrator):
 
 `python -m pip install pyodbc`
+
 `python -m pip install numpy=1.19.3`
+
 `python -m pip install pandas`
+
 `python -m pip install pyyaml`
+
 `python -m pip install sklearn`
+
 `python -m pip install shapely`
+
 `python -m pip install haversine`
+
 `python -m pip install pynput`
 
 ***Before installing GDAL:***
